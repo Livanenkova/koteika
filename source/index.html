@@ -3,18 +3,163 @@
 <head>
   <meta charset="UTF-8">
   <title>Koteika</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
 <header class="header">
   <nav class="header-nav">
     <div class="header-logo"></div>
-    <ul class="header-list">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
+    <ul class="header_list">
+      <li class="header_list-item">
+        <a class="header_list-link" href="">Почему мы?</a>
+      </li>
+      <li class="header_list-item">
+        <a class="header_list-link" href="">Номера</a>
+      </li>
+      <li class="header_list-item">
+        <a class="header_list-link" href="">Отзывы</a>
+      </li>
+      <li class="header_list-item">
+        <a class="header_list-link" href="">Как нас найти</a>
+      </li>
     </ul>
   </nav>
 </header>
+
+<main class="main">
+  <h1 class="visually-hidden">Сервис бронирования номеров "Котейка"</h1>
+  <h2 class="main-title">Наши номера</h2>
+  <form class="form" action="https://echo.htmlacademy.ru." method="post">
+    <section class="filter">
+      <fieldset class="price-controls">
+        <legend class="price-title">Цена за сутки,&#8381;</legend>
+        <div class="price-legend">
+        <input class="min-price"  type="text" placeholder="от 100">
+        <input class="max-price"  type="text" placeholder="до 600">
+        </div>
+      </fieldset>
+
+      <fieldset class="square-title">
+        <legend class="square">Площадь</legend>
+        <h2 class="visually-hidden"> Переключатель площади номеров</h2>
+        <div class="toggle-item">
+          <input class="toggle-checkbox" type="checkbox" name="0,63m2" id="0,63m2" checked>
+          <label class="toggle-text" for="0,63m2">0,63 м2</label>
+        </div>
+        <div class="toggle-item">
+          <input class="toggle-checkbox" type="checkbox" name="0,90m2" id="0,90m2" checked>
+          <label class="toggle-text" for="0,90m2">0,90 м2</label>
+        </div>
+        <div class="toggle-item">
+          <input class="toggle-checkbox" type="checkbox" name="1,13m2" id="1,13m2" checked>
+          <label class="toggle-text" for="1,13m2">1,13 м2</label>
+        </div>
+        <div class="toggle-item">
+          <input class="toggle-checkbox" type="checkbox" name="1,56m2" id="1,56m2" checked>
+          <label class="toggle-text" for="1,56m2">1,56 м2</label>
+        </div>
+        <div class="toggle-item">
+          <input class="toggle-checkbox" type="checkbox" name="2,56m2" id="2,56m2" checked>
+          <label class="toggle-text" for="2,56m2">2,56 м2</label>
+        </div>
+        <div class="toggle-item">
+          <input class="toggle-checkbox" type="checkbox" name="2,88m2" id="2,88m2" checked>
+          <label class="toggle-text" for="2,88m2">2,88m2</label>
+        </div>
+      </fieldset>
+
+        <fieldset class="equipment">
+
+        <legend class="equipment-title">Оснащение номера</legend>
+        <h2 class="visually-hidden"> Переключатель оснащения номеров</h2>
+        <div class="toggle-item">
+          <input class="toggle-checkbox" type="checkbox" id="room">
+          <label class="toggle-text" for="room">Пустой номер</label>
+        </div>
+        <div class="toggle-item">
+          <input class="toggle-checkbox" type="checkbox" id="sunbed" checked>
+          <label class="toggle-text" for="sunbed">Лежак</label>
+        </div>
+        <div class="toggle-item">
+          <input class="toggle-checkbox" type="checkbox" id="claw-point" checked>
+          <label class="toggle-text" for="claw-point">Когтеточка</label>
+        </div>
+        <div class="toggle-item">
+          <input class="toggle-checkbox" type="checkbox" id="game" checked>
+          <label class="toggle-text" for="game">Игровой-комплекс</label>
+        </div>
+        <div class="toggle-item">
+          <input class="toggle-checkbox" type="checkbox" id="home" checked>
+          <label class="toggle-text" for="home">Домик</label>
+        </div>
+      </fieldset>
+
+      <button type="submit">Применить</button>
+      <button type="reset">Сбросить фильтр</button>
+    </section>
+
+    <section class="catalog">
+      <h2 class="visually-hidden">Фильтр выбора номера</h2>
+      <ul class="catalog-list">
+        <li class="catalog__item">
+          <div class="catalog__item-photo"></div>
+          <h3 class="catalog__item-subtitle">Эконом</h3>
+          <div class="catalog__item-dimension">Размеры (ШхГхВ) - 90х70х180 см</div>
+          <div class="catalog__item-square">Площадь - 0,63 м2</div>
+          <div class="catalog__item-equipment">Оснащение номера</div>
+          <div class="catalog__item-price">Цена за сутки:100&#8381;</div>
+          <button class="catalog__item-button" type="submit">Забронировать</button>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__item-photo"></div>
+          <h3 class="catalog__item-subtitle">Эконом плюс</h3>
+          <div class="catalog__item-dimension">Размеры (ШхГхВ) - 90х100х180 см</div>
+          <div class="catalog__item-square">Площадь - 0,90 м2</div>
+          <div class="catalog__item-equipment">Оснащение номера</div>
+          <div class="catalog__item-price">Цена за сутки:200&#8381;</div>
+          <button class="catalog__item-button" type="submit">Забронировать</button>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__item-photo"></div>
+          <h3 class="catalog__item-subtitle">Комфорт</h3>
+          <div class="catalog__item-dimension">Размеры (ШхГхВ) - 100х125х180 см</div>
+          <div class="catalog__item-square">Площадь - 1,13 м2</div>
+          <div class="catalog__item-equipment">Оснащение номера</div>
+          <div class="catalog__item-price">Цена за сутки:250&#8381;</div>
+          <button class="catalog__item-button" type="submit">Забронировать</button>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__item-photo"></div>
+          <h3 class="catalog__item-subtitle">Сьют</h3>
+          <div class="catalog__item-dimension">Размеры (ШхГхВ) - 125х125х180 см</div>
+          <div class="catalog__item-square">Площадь - 1,56 м2</div>
+          <div class="catalog__item-equipment">Оснащение номера</div>
+          <div class="catalog__item-price">Цена за сутки:350&#8381;</div>
+          <button class="catalog__item-button" type="submit">Забронировать</button>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__item-photo"></div>
+          <h3 class="catalog__item-subtitle">Люкс</h3>
+          <div class="catalog__item-dimension">Размеры (ШхГхВ) - 160х160х180 см</div>
+          <div class="catalog__item-square">Площадь - 2,56 м2</div>
+          <div class="catalog__item-equipment">Оснащение номера</div>
+          <div class="catalog__item-price">Цена за сутки:500&#8381;</div>
+          <button class="catalog__item-button" type="submit">Забронировать</button>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__item-photo"></div>
+          <h3 class="catalog__item-subtitle">Супер-Люкс</h3>
+          <div class="catalog__item-dimension">Размеры (ШхГхВ) - 180х160х180 см</div>
+          <div class="catalog__item-square">Площадь - 2,88 м2</div>
+          <div class="catalog__item-equipment">Оснащение номера</div>
+          <div class="catalog__item-price">Цена за сутки:600&#8381;</div>
+          <button class="catalog__item-button" type="submit">Забронировать</button>
+        </li>
+      </ul>
+    </section>
+
+  </form>
+</main>
 </body>
 </html>
